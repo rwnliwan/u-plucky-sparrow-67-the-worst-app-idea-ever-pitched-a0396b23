@@ -37,3 +37,4 @@ per wish, one drop, lick, championship, per ring, squeeze/middle, on purpose, sn
 | v | change | entry bytes | preflight | note |
 |---|--------|-------------|-----------|------|
 | v1 | main.ts + README (3 live badges, 0 shields) + owner.json + trial-log | 113 | `node main.ts` (node v24.22.1) → /output/entry.txt 113 bytes, md5 `587b8d080c193c22633cd01e86a16519`, len 113, gate 1–240 OK | first build, preflight PASS |
+| v1 | bundle v1 + check v1 | 113 | bundle v1 208.166 B sha256 `1a898af6…`, 0 usage rows (expected: subagent row flushes at run end); check v1 **12 passed / 2 failed / 5 skipped**: FAIL `license_osi` (no root LICENSE) + FAIL `thinking_priced` (0 usage rows); `thinking_revised` PASS, `thinking_reproduces` 96,2% (51/53 lines authored) | check v1: add MIT LICENSE, re-commit, re-bundle, re-check; `thinking_priced` left for coordinator re-bundle after this run ends |
